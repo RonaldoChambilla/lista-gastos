@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Calcular Gastos</title>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<h1>Lista de Gastos</h1>
+<form id="gasto-form">
+<input type="text" id="description-input" placeholder="Ingresa la descripcion..." required/>
+<input type="number" id="monto-input" placeholder="Ingresa el monto de gasto..." step="0.01" required/>
+<input type="text" id="categoria-input" placeholder="Categoria donde se iso el gasto..." required/>
+<button type="submit">Agregar Gasto</button>
+</form>
+
+<table>
+  <caption>Lista de Gastos</caption>
+  <thead>
+    <tr>
+      <th>Descripcion</th>
+      <th>Monto</th>
+      <th>Categoria</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Manzana</td>
+      <td>Rojo</td>
+      <td>1.50€</td>
+    </tr>
+    <tr>
+      <td>Plátano</td>
+      <td>Amarillo</td>
+      <td>0.75€</td>
+    </tr>
+  </tbody>
+</table>
+
+</table>
+<button id="clear-tasks">Eliminar todas</button>
+<script src="app.js"></script>
+</body>
+</html>
